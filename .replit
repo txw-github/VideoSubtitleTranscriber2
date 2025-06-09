@@ -2,7 +2,7 @@ modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["ffmpeg-full", "glibcLocales", "libsndfile", "libxcrypt", "pkg-config", "unzip", "xsimd"]
+packages = ["ffmpeg", "ffmpeg-full", "glibcLocales", "libsndfile", "libxcrypt", "pkg-config", "unzip", "xsimd"]
 
 [workflows]
 runButton = "Project"

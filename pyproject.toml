@@ -3,7 +3,14 @@ name = "repl-nix-workspace"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "jieba>=0.42.1",
+    "numpy>=2.3.0",
+    "psutil>=7.0.0",
+    "pydub>=0.25.1",
+    "requests>=2.32.3",
+    "speechrecognition>=3.14.3",
+]
 
 [[tool.uv.index]]
 explicit = true
