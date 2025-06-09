@@ -619,7 +619,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Video Subtitle Generation System')
-    parser.add_argument('input', nargs='?', help='Input video file or directory')
+    parser.add_argument('input', help='Input video file or directory')
     parser.add_argument('-o', '--output', default='output', help='Output directory')
     parser.add_argument('-l', '--language', default='zh-CN',
                        choices=['zh-CN', 'en-US', 'auto'],
@@ -659,11 +659,6 @@ def main():
             if not status.get('internet'):
                 print("\nWarning: No internet connection - Google Speech Recognition requires internet")
             
-            return
-        
-        if not args.input:
-            print("Error: input file or directory is required (unless using --check)")
-            parser.print_help()
             return
         
         if args.batch:
